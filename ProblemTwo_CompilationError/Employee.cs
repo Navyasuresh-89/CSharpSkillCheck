@@ -15,19 +15,29 @@ namespace ProblemTwo_CompilationError
         public DateTime DateOfJoining { get; set; }
 
         public Employee()
-        {
+
+       {
             //Default number of leaves credited is 2 per month based on date of joining to the current date
             NoOfLeaves= GetMonthDifference(DateOfJoining, DateTime.Now) * 2;
         }
         public Employee(int eID,string eName,int eLevel, DateTime eDoJ)
         {
-
+            EmpID=eID;
+            EmpName=eName;
+            EmpLevel=eLevel;
+            DateOfJoining=eDoJ;
+            Console.WriteLine("Emplyee id:" +eID);
+            Console.WriteLine("emplyee name"+eName);
+            Console.WriteLine("emplyee level"+eName);
+            Console.WriteLine("emplyee date time"+eDoJ);
+            
         }
 
         public static int GetMonthDifference(DateTime startDate, DateTime endDate)
         {
             int monthsApart = 12 * (startDate.Year - endDate.Year) + startDate.Month - endDate.Month;
             return Math.Abs(monthsApart);
+            
         }
 
     }

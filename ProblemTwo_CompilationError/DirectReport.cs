@@ -15,6 +15,11 @@ namespace ProblemTwo_CompilationError
         {
             ReportsTo = managerEmpObj;
             ProjectCode = pCode;
+            Console.WriteLine("report manager:"+managerEmpObj);
+            Console.WriteLine("report code"+pCode);
+            
+            
+
         }
     }
 }

@@ -4,13 +4,14 @@ using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Employee;
 
 namespace ProblemTwo_CompilationError
 {
     class Program
     {
         static void Main(string[] args)
-        {
+        {   
             Employee empOne = new DirectReport(1, "Sam", 3, DateTime.ParseExact("01-01-2021", "dd-MM-yyyy", CultureInfo.InvariantCulture),null,"SPS200");
             Employee empTwo = new DirectReport(2, "Smith", 3, DateTime.ParseExact("01-01-2021", "dd-MM-yyyy", CultureInfo.InvariantCulture),null,"SPS200");
             Employee empThree = new DirectReport(3, "Harvey", 3, DateTime.ParseExact("01-01-2021", "dd-MM-yyyy", CultureInfo.InvariantCulture), null, "SPS200");
